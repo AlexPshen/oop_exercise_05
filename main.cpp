@@ -9,8 +9,9 @@
 #include "triangle.h"
 #include "vertex.h"
 
+
 int main(){
-    que<triangle<double>> q;
+    con::que<triangle<double>> q;
     for(;;){
         char com[40];
         std::cin >> com;
@@ -20,7 +21,7 @@ int main(){
             triangle<double> r_tr = triangle<double>(p1, p2, p3);
             q.push(r_tr);
         } else if(strcmp(com, "print_top") == 0){
-            std::cout << q.top().area() << "\n";
+            q.top().print(std::cout);
         } else if(strcmp(com, "pop") == 0){
             q.pop();
         } else if(strcmp(com, "exit") == 0){

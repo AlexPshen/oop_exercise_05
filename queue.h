@@ -7,6 +7,8 @@
 #include <iostream>
 #include<string.h>
 
+namespace con{
+
 template<class T>
 struct que{
 private:
@@ -23,8 +25,8 @@ public:
     T& top();
     struct forward_it{
         using value_type = T;
-        using reference = T &;
-        using pointer = T *;
+        using reference = T&;
+        using pointer = T*;
         using difference_type = ptrdiff_t;
         using iterator_category = std::forward_iterator_tag;
 
@@ -38,7 +40,7 @@ public:
         bool operator== (const forward_it& it) const;
         bool operator!= (const forward_it& it) const; 
        
-    //private:
+    private:
         que_el* ptr;
 
         friend class que;
@@ -236,4 +238,6 @@ T& que<T>::top(){
 
 
 #endif
+
+}
 
