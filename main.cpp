@@ -43,7 +43,7 @@ int main(){
             }
             q.erase(it);
         } else if(strcmp(com, "print_all") == 0){
-            std::for_each(q.begin(),q.end(),[](triangle<double> f){std::cout << f.area() << " "; });
+            std::for_each(q.begin(),q.end(),[](triangle<double> f){f.print(std::cout);});
             std::cout << '\n';
         } else if(strcmp(com, "less") == 0){
             double val;
