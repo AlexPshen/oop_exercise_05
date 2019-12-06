@@ -42,13 +42,9 @@ int main(){
                 -- index;
             }
             q.erase(it);
-        /*} else if(strcmp(com, "print_all") == 0){
-            auto it = q.begin();
-            while(it != q.end()){
-                std::cout << it.ptr -> value.area() << " ";
-                ++ it;
-            }
-            std::cout << '\n'; */
+        } else if(strcmp(com, "print_all") == 0){
+            std::for_each(q.begin(),q.end(),[](triangle<double> f){std::cout << f.area() << " "; });
+            std::cout << '\n';
         } else if(strcmp(com, "less") == 0){
             double val;
             std::cin >> val;
