@@ -1,0 +1,12 @@
+insert 0              
+0 0 9 9 0 9
+less 90
+1
+insert 0 
+0 0 1 1 0 1
+less 2
+1
+less 80
+2
+exit
+

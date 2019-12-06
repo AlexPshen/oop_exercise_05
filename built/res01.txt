@@ -1,0 +1,14 @@
+push 0 0 1 1 0 1
+print_top
+0.5
+push 0 0 2 2 0 2
+print_top
+0.5
+pop
+print_top
+2
+pop
+pop
+Очередь пуста
+exit
+
